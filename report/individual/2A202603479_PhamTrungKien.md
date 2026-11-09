@@ -152,18 +152,18 @@ Hiện tại: khoảng 8 đến 10 phút mỗi ca trước giờ khám
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
-|---|---|---|
-| Pitch Problem Card | Pitch card Vinpearl phản hồi review OTA: nói rõ actor CSKH, năm bước, chỗ nghẽn ở soạn thư khoảng năm phút, mốc mười lăm phút một review | Card vào shortlist. Nhóm nhận đây là bài có số phút rõ nhất trong các candidate mình mang lên |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt cho Lâm (bài gắn nhãn / tìm thông tin vận hành): “Lần gần nhất cậu gắn nhãn hay tìm note mất bao lâu, đếm thật chứ không ước?”. Hỏi Long (bài liên quan hồ sơ / tóm tắt): “Nếu không có AI, làm checklist một trang thì còn đau ở bước nào?” | Lâm bổ sung ước số note mỗi ca. Long thừa nhận checklist giảm sót trường nhưng chưa giảm thời gian đọc EMR, nên nhóm không chọn No AI sớm quá |
-| Nhận phản biện | Câu hỏi tôi nhận được: Thanh hỏi “Template SOP theo chủ đề thôi đã đủ chưa, cần gì phải kéo AI vào?”. Lâm hỏi “Số mười lăm phút lấy từ đâu, có bấm giờ không?” | Tôi đã sửa gì: thêm phương án không dùng AI vào card; ghi rõ mốc mười hai đến mười lăm phút là ước từ bài Day02 trước, đưa vào giả định cần kiểm ở CP4; chốt nghẽn chính là bước soạn thư |
-| Gom cluster / cây OST | Đề xuất gom Vinpearl review + vài bài “đọc nhiều nguồn rồi viết lại cho người khác” thành cluster A. Giúp viết nhánh opportunity trên cây OST, gạch ý “chatbot tự trả lời OTA” vì đó là solution | Cây OST của nhóm không còn tên công cụ ở tầng opportunity. Cluster A sau đó thắng phiếu thảo luận |
-| Chọn candidate problem | Trong bảng chấm mình chấm cao bài Vinpearl ở “pain có bằng chứng” và “vừa sức lab”. Giữ quan điểm chọn Vinpearl dù Lâm nghiêng Xanh SM vì impact rộng | Nhóm chốt Vinpearl. Xanh SM ghi vào hướng tiếp theo. Lý do loại: Xanh SM thiếu quyền dữ liệu note trong lab; Vinmec đụng EMR nhạy cảm |
-| Kiểm chứng / research | Phỏng vấn nhanh một bạn từng làm part-time khách sạn / CSKH kênh online (không phải thành viên Ban3). Hỏi lần gần nhất trả lời review xấu mất bao lâu, bước nào ngồi lâu nhất. Research thêm công cụ sẵn có kiểu Remi / ReviewPro / mẫu trả lời OTA (tự mở link) | Snapshot đưa vào báo cáo nhóm: pain nằm ở đọc và viết thư hơn là bấm gửi. Research khiến nhóm nghiêng “dùng tool có sẵn + người duyệt”, không tự xây agent |
-| Quy trình nhóm | Vẽ bản hiện tại năm bước và bản tương lai: rule lấy review, máy soạn nháp, CSKH duyệt rồi mới đăng. Nhắc boundary không tự đăng, không tự hứa hoàn tiền | Nhóm lấy gần như nguyên sơ đồ này vào `group_report.md`. Thêm phương án quay về template nếu nháp kém |
-| Problem Statement | Viết nháp sáu trường v0 (actor, quy trình, bottleneck, impact, metric, boundary). Sau phản biện của Thanh, thêm metric chất lượng: không tăng số lần quản lý bắt viết lại vì hứa ngoài SOP | v0 lên được v1. Boundary ghi rõ AI không tự đăng OTA |
-| Mức can thiệp AI | So bốn mức. Mình giữ Workflow: bước cố định, AI chỉ soạn nháp. Không chọn Agent vì rủi ro tự đăng / tự bồi thường | Nhóm chọn Workflow. Phần No AI giữ cho property nào leadership chỉ cần trả lời mẫu ngắn |
-| Quyết định | Chấm Value trung bình (mẫu phỏng vấn còn mỏng), Feasibility thấp hơn vì đã có tool thị trường. Đề xuất Go phạm vi nhỏ hai tuần, ngưỡng dừng nếu phải viết lại quá bảy mươi phần trăm bản nháp thì về template | Nhóm ghi quyết định Go phạm vi nhỏ, kèm ngưỡng dừng như trên |
+| Hoạt động                  | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
+| -------------------------- | -------------- | -------------------------------- |
+| Pitch Problem Card         |                |                                  |
+| Phản biện bài của bạn khác |                |                                  |
+| Nhận phản biện             |                |                                  |
+| Gom cluster / cây OST      |                |                                  |
+| Chọn candidate problem     |                |                                  |
+| Kiểm chứng / research      |                |                                  |
+| Quy trình nhóm             |                |                                  |
+| Problem Statement          |                |                                  |
+| Mức can thiệp AI           |                |                                  |
+| Quyết định                 |                |                                  |
 
 ---
 
