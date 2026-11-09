@@ -13,7 +13,7 @@
 
 * Tên nhóm: Ban3
 
-* Link repo nhóm: https://github.com/LysLama/K5-L3A-DAY02-Ban3-DiscoveryProblemFraming/tree/2A202603439-ToMinhThanh
+* Link repo nhóm: https://github.com/LysLama/K5-L3A-DAY02-Ban3-DiscoveryProblemFraming
 
 ## 2. Scan problem (CP1)
 
@@ -145,40 +145,57 @@ HIỆN TẠI — 25 phút
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm | 
 | ----- | ----- | ----- | 
-|  | 
+| Pitch Problem Card | Đưa candidate viết mô tả Pull Request, sinh unit test và phân tích log lỗi; candidate nhóm tôi muốn pitch nhất là viết PR description. | Ba candidate được ghi trong bảng pitch CP3 của báo cáo nhóm; nhóm chọn ý tưởng tài xế nhận chuyến nhưng xe không tiến về điểm đón của Lý Thanh Lâm. |
+| Phản biện bài của bạn khác | Hỏi Lý Thanh Lâm: nếu xe đứng im 3 phút thì làm sao phân biệt tài xế cố tình “ngâm cuốc” với kẹt xe hoặc mất sóng trong hầm? | Nêu rủi ro báo nhầm và ảnh hưởng tới tài xế; câu hỏi được ghi trong `group_report.md`, mục 2.1. |
+| Nhận phản biện | Phạm Trung Kiên hỏi liệu thời gian chờ review PR 1–2 ngày có thực sự do thiếu mô tả hay do Senior bận; Lý Thanh Lâm hỏi ai chịu trách nhiệm kiểm tra unit test do AI sinh. | Trong candidate PR, không quy kết thời gian chờ review là do mô tả thiếu context; với unit test, cần xác định người chịu trách nhiệm duyệt nội dung AI gợi ý. Xem `group_report.md`, mục 2.1. |
+| Gom cluster / cây OST | Được phân công hỗ trợ CP3 cùng Lý Thanh Lâm và Phạm Trung Kiên. | Báo cáo nhóm ghi các cluster về điều phối chuyến, chất lượng vận hành và tổng hợp thông tin; phần đóng góp cá nhân cụ thể trong buổi cần tôi xác nhận. |
+| Chọn candidate problem | Tham gia thảo luận và ủng hộ candidate của Lý Thanh Lâm theo kết quả nhóm ghi trong báo cáo. | Candidate được chốt là tình huống hành khách không biết xử lý thế nào khi chuyến đã ghép nhưng xe không tiến về điểm đón; xem `group_report.md`, mục 1–2. |
+| Kiểm chứng / research | Theo `TEAM.md`, tôi được phân công hỗ trợ Đoàn Gia Long ở CP4; hồ sơ nhóm hiện có interview snapshots và bảng tổng hợp. | `group_report.md`, mục 3.2. Báo cáo chưa ghi rõ phần snapshot/phỏng vấn nào do cá nhân tôi thực hiện. Ngoài ra, bảng tổng hợp ghi 3 hành khách và 2 tài xế nhưng Snapshot 5 mô tả chuyên viên vận hành; cần nhóm xác minh lại trước khi nộp. |
+| Quy trình nhóm | Theo phân công trong `TEAM.md`, tôi không phải người chính vẽ quy trình CP5. Tôi góp ý rủi ro tài xế bị kết luận nhầm từ dấu hiệu GPS. | Báo cáo nhóm mô tả Rule cho khâu hỗ trợ khách và Workflow AI cho hậu kiểm; xem `group_report.md`, mục 4. |
+| Problem Statement | Được phân công phụ trách CP6 Problem Statement v1 cùng với các deliverable khác. | Bản v1 tách actor hành khách và CSKH, đặt AI ở khâu hậu kiểm, kèm boundary; xem `group_report.md`, mục 7. |
+| Mức can thiệp AI | Theo `TEAM.md`, phụ trách ma trận, AI Canvas, PAIR và bộ eval 10 cặp. | Bằng chứng trong `group_report.md`, mục 6–7 và [`cp6-eval-set-10-pairs.md`](../assets/cp6-eval-set-10-pairs.md). Các nội dung là sản phẩm nhóm; xác nhận phần nào do tôi trực tiếp soạn trước khi nộp. |
+| Quyết định | Theo phân công, hỗ trợ Lý Thanh Lâm đánh giá rủi ro và ngưỡng dừng. | Quyết định cuối là Not Yet, pilot Staging/Mock 4 tuần; xem `group_report.md`, mục 8 và `TEAM.md`. |
 
 ## 5. Dùng AI
 
-| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? | 
-| ----- | ----- | ----- | ----- | ----- | 
-| CP1 Scan | Nhờ gợi ý nỗi đau của lập trình viên mới. | Gợi ý đúng các pain point về docs, log, setup môi trường. | Gợi ý AI tự động fix bug. | Gạt bỏ vì hiểu rằng AI tự fix bug rất nguy hiểm và ngoài tầm kiểm soát của junior. | 
-| CP2 Problem Card | Đóng vai Senior Dev chỉ trích bài toán viết PR. | Cảnh báo về việc AI có thể làm Dev phụ thuộc, mất khả năng giao tiếp kỹ thuật. | Đề xuất giải pháp là cấm dùng AI. | Tôi không cấm, mà coi AI như công cụ "dự thảo", sửa lại quy trình để con người làm chủ văn bản cuối. | 
-| CP4 Research | Dùng AI để tìm các công cụ liên quan đến tạo mô tả/review PR. | AI gợi ý các dự án như `pr-agent` và `openai-pr-reviewer`. | Chưa kèm link hoặc ghi chép kiểm chứng; nhận định về tính năng mặc định của từng dự án chưa được xác minh. | Trước khi kết luận, mở tài liệu chính thức, xác nhận đúng tính năng/phạm vi và chỉ ghi các kết quả đã kiểm tra. | 
-| CP5 Quy trình | Gen sơ đồ Mermaid. | Tạo sơ đồ nhanh, đúng syntax. | Gộp bước lấy Git diff và Jira thành một. | Yêu cầu AI tách ra vì việc gọi API Jira và gọi Git diff là 2 context khác nhau. | 
-| CP5–6 Problem Statement | Viết lại câu văn ngắn gọn cho phần Impact. | Từ ngữ sắc sảo, thuyết phục. | Mất đi tính bối cảnh nội bộ team (sự khó chịu của Senior). | Tự thêm lại cụm "Senior review mệt mỏi, PR bị ngâm" để thấy rõ tính human trong bài toán. | 
-| CP6 Mức can thiệp / quyết định | Lập bảng so sánh các mức độ AI. | Đưa ra pros/cons rõ ràng. | Có xu hướng tâng bốc Agent. | Tôi dùng phán đoán thực tế: Agent không được phép chạm vào repo công ty, chốt Workflow là tối đa. | 
+| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+| ----- | ----- | ----- | ----- | ----- |
+| CP1 Scan | Nhờ gợi ý nỗi đau của lập trình viên mới. | Gợi ý đúng các pain point về docs, log, setup môi trường. | Gợi ý AI tự động fix bug. | Gạt bỏ vì hiểu rằng AI tự fix bug rất nguy hiểm và ngoài tầm kiểm soát của junior. |
+| CP2 Problem Card | Đóng vai Senior Dev chỉ trích bài toán viết PR. | Cảnh báo về việc AI có thể làm Dev phụ thuộc, mất khả năng giao tiếp kỹ thuật. | Đề xuất giải pháp là cấm dùng AI. | Tôi không cấm, mà coi AI như công cụ "dự thảo", sửa lại quy trình để con người làm chủ văn bản cuối. |
+| CP4 Research | Theo ghi chú cá nhân, dùng AI tìm công cụ liên quan đến PR description. | Gợi ý `pr-agent` và `openai-pr-reviewer`. | Các nhận định về tính năng chưa được xác minh trong ghi chú này. | Cần mở tài liệu chính thức và chỉ giữ thông tin đã kiểm tra; phần research này thuộc candidate cá nhân, không phải bằng chứng cho candidate Xanh SM. |
+| CP5 Quy trình | Ghi chú hiện có nói AI được dùng để tạo sơ đồ Mermaid cho quy trình PR. | Giúp tạo nhanh cấu trúc sơ đồ. | Đã gộp bước lấy Git diff và Jira thành một. | Yêu cầu tách hai nguồn dữ liệu. Đây là quy trình của candidate cá nhân; CP5 nhóm về chuyến xe cần ghi đúng việc AI bạn thực sự đã làm. |
+| CP5–6 Problem Statement | Ghi chú hiện có nói AI hỗ trợ rút gọn phần Impact cho candidate PR. | Giúp câu chữ ngắn và rõ hơn. | Làm mất bối cảnh của reviewer. | Bổ sung lại bối cảnh theo nhận định cá nhân. Với bài nhóm, chỉ ghi việc sử dụng AI nếu thực sự đã dùng. |
+| CP6 Mức can thiệp / quyết định | Ghi chú hiện có nói AI hỗ trợ so sánh các mức can thiệp cho candidate PR. | Giúp liệt kê ưu/nhược điểm. | Có xu hướng đề cao Agent. | Đối chiếu với quy trình thật và chọn mức có căn cứ. Cập nhật nhật ký riêng cho bài nhóm nếu bạn đã dùng AI ở CP6. |
 
 ## 6. Reflection (CP7)
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+_Tự viết reflection dựa trên một candidate cụ thể đã nghe trong buổi nhóm._
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+_Tự mô tả tình huống thực tế và cách nhóm điều chỉnh; có thể đối chiếu phần phản biện và pivot trong `group_report.md`._
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-Có. Lúc đầu tôi định lấy metric là: "100% PR được viết tự động bởi AI". Nhưng sau khi bạn Huy phản biện: "Nếu AI viết sai logic mà Junior không thèm đọc, Senior chửi ai?", tôi nhận ra rủi ro rất lớn. Tôi đổi ý, sửa lại metric là "Giảm thời gian viết PR, tỷ lệ PR bị trả lại do thiếu context <10%" và kiên quyết đưa vào Boundary quy tắc "Dev phải tự review và chịu trách nhiệm với bản nháp PR".
+_Tự kể lần phản biện có thật. Đoạn cũ nhắc “Huy”, người không có trong danh sách thành viên, và một metric PR không thuộc candidate nhóm đã chọn nên đã được bỏ._
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-Rất bất ngờ khi khảo sát 3 anh Senior Dev. Tôi tưởng họ muốn PR mô tả thật chi tiết từng hàm bị đổi (kỹ thuật). Nhưng không, cả 3 đều nói: "Code đổi gì thì anh nhìn Git diff là thấy. Cái anh cần trong description là TẠI SAO em lại làm thế này, business logic đằng sau là gì, test case em chạy là gì?". Điều này làm thay đổi hoàn toàn cách chúng tôi định viết Prompt: phải nhồi thêm bối cảnh từ Jira vào, chứ chỉ quăng Git diff cho AI thì vô dụng.
+_Tự viết từ trải nghiệm kiểm chứng mình trực tiếp tham gia. Phân biệt rõ nghiên cứu candidate PR cá nhân với 5 interview snapshots của nhóm; không nhận phần phỏng vấn của thành viên khác là của mình._
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-Đó là việc xác định ranh giới (Boundary) và cách đo lường chất lượng (Quality Metric). Đo thời gian viết PR giảm từ 20 phút xuống 5 phút thì dễ. Nhưng đo xem PR đó "có chất lượng hơn" hay không thì rất cảm tính. Nhóm đã rất vất vả mới chốt được metric gián tiếp là "Đếm số lượt comment (ping) yêu cầu bổ sung context của người Reviewer".
+_Tự trả lời theo Problem Statement v1 của nhóm; đoạn cũ nói về metric cho PR cá nhân, không phải problem nhóm đã chọn._
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-Nếu làm lại, tôi sẽ xem xét phương án No AI kỹ hơn. Có thể chỉ cần tạo một PR Template chuẩn trên GitHub (có các mục checklist bắt buộc check) là đã giải quyết được 80% vấn đề junior viết thiếu ý, mà không cần tốn tiền chạy API của OpenAI. Tôi sẽ phản biện mạnh hơn ở bước CP4 để nhóm thực sự chứng minh xem AI có đem lại giá trị vượt trội so với một template cứng hay không.
+_Tự viết từ trải nghiệm thật trong nhóm; đoạn cũ nói về phương án PR template và cần được thay bằng điều bạn thực sự sẽ làm khác cho bài Xanh SM._
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-Bắt đầu từ **problem** là Junior Dev tốn nhiều thời gian viết mô tả PR và thường viết kém khiến Senior phàn nàn. Ta ánh xạ ra **quy trình** mở PR hiện tại, nhận ra nút thắt tốn 15-20 phút nằm ở việc tổng hợp lại logic code (Git diff) và yêu cầu (Jira) thành lời văn. Từ đó, **metric** được đặt ra là giảm thời gian viết xuống dưới 5 phút và giảm số lần bị bắt sửa PR. Để đảm bảo chất lượng, **boundary** cốt lõi là AI chỉ đóng vai trò soạn nháp, Dev bắt buộc phải kiểm duyệt và chịu trách nhiệm trước khi bấm Submit. Do đầu vào (diff, ticket) cố định và các bước rõ ràng, **mức can thiệp AI** được chọn là Workflow. Cuối cùng, nhóm đi đến **quyết định** là Go (pilot) bằng cách cho Dev tự copy/paste diff vào ChatGPT trong 2 tuần để kiểm chứng chất lượng prompt trước khi tự động hóa bằng tool.
+**6.7. Hiểu bài:** tự viết 5–8 câu theo chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* cho candidate Xanh SM của nhóm. Dàn ý để bạn tự diễn đạt:
+
+- Problem: Hành khách không biết xử lý ra sao khi chuyến đã ghép nhưng xe chưa tiến về điểm đón; tài xế cũng có thể bị gắn nhãn sai vì kẹt xe/GPS.
+- Quy trình: Rule hỗ trợ khách chọn đổi xe/tiếp tục; sau khi chuyến bị hủy, AI Workflow dự thảo phân loại và trích bằng chứng cho CSKH hậu kiểm.
+- Metric nhóm nêu: khách thoát cuốc trong dưới 5 phút; CSKH xử lý dưới 30 giây/ticket; tỷ lệ false positive dưới 5%.
+- Boundary: AI không tự phạt, tự hoàn tiền hay can thiệp tài khoản; người kiểm soát duyệt; dữ liệu định danh phải được bảo vệ.
+- Mức chọn và quyết định: Workflow kết hợp Rule; Not Yet, pilot 4 tuần trên Staging/Mock Sandbox.
+
+> Hãy viết lại bằng lời của bạn, đồng thời đối chiếu các metric/boundary với `group_report.md`; mục này không được tính là reflection thay bạn.
 
 ## 7. Tài liệu tham khảo
 
