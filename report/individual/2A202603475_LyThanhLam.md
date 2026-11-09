@@ -147,31 +147,31 @@ flowchart LR
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-| Hoạt động                     | Tôi đã làm gì?           | Kết quả / ảnh hưởng tới bài nhóm |
-| -------------------------------- | ----------------------------- | ---------------------------------------- |
-| Pitch Problem Card               |                               |                                          |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt:    |                                          |
-| Nhận phản biện                | Câu hỏi tôi nhận được: | Tôi đã sửa gì:                      |
-| Gom cluster / cây OST           |                               |                                          |
-| Chọn candidate problem          |                               |                                          |
-| Kiểm chứng / research          |                               |                                          |
-| Quy trình nhóm                 |                               |                                          |
-| Problem Statement                |                               |                                          |
-| Mức can thiệp AI               |                               |                                          |
-| Quyết định                    |                               |                                          |
+| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
+|---|---|---|
+| **Pitch Problem Card** | Trình bày Problem Card #1 về tài xế Xanh SM nhận cuốc nhưng đứng im/đi ngược hướng ép khách hủy, chỉ rõ 2 bottleneck: chờ thụ động 12' và chụp màn hình làm bằng chứng 8'. | Thuyết phục cả nhóm chọn làm đề tài trọng tâm để hội tụ chung cho cả nhóm. |
+| **Phản biện bài của bạn khác** | Câu hỏi tôi đã đặt:<br>• Cho Thành: *'Nếu để AI tự sinh unit test, rủi ro mô hình sinh ra test case ảo (hallucinate) làm sai logic nghiệp vụ thì ai kiểm soát?'*<br>• Cho Kiên: *'Nhóm sinh viên bên ngoài không có quyền truy cập hệ thống OTA Vinpearl, tiêu chuẩn giọng văn Vinpearl lấy gì định lượng?'*<br>• Cho Tùng: *'Lọc trùng số điện thoại chỉ cần hàm Excel hoặc script 5 dòng, sao phải dùng AI?'*<br>• Cho Long: *'Rủi ro dị ứng thực phẩm rất nguy hiểm, người dùng có dám giao phó sức khỏe bố mẹ cho AI không?'* | Giúp các bạn nhìn ra ranh giới giữa việc cần AI và việc chỉ cần Rule/công cụ truyền thống; làm căn cứ để chấm điểm loại các bài thiếu tính khả thi ở CP3. |
+| **Nhận phản biện** | Câu hỏi tôi nhận được (từ Thành): *'Nếu chỉ dựa vào GPS đứng im 3 phút thì làm sao phân biệt được tài xế cố tình ngâm cuốc với tài xế kẹt xe đèn đỏ Cổ Linh hoặc hầm chung cư mất sóng?'* | Tôi đã sửa: Tách đôi quy trình thành 2 tầng: Tầng 1 dùng Rule chỉ để giải cứu khách (cho đổi xe và giữ voucher), Tầng 2 dùng AI Workflow phân tích ngữ cảnh chat kết hợp cờ giao thông để hỗ trợ CSKH duyệt phạt, tuyệt đối không phạt tự động tài xế. |
+| **Gom cluster / cây OST** | Trực tiếp chủ trì vẽ cây Opportunity Solution Tree (OST) rút gọn: 1 Outcome đo lường được, 3 Opportunity (pain khách hàng, tài xế, CSKH) và gạch bỏ 3 solution trá hình. | Giúp nhóm không bị sa đà vào các tính năng viển vông (chatbot hoàn tiền, AI tự khóa tài xế) ngay từ đầu. |
+| **Chọn candidate problem** | Cùng 4 thành viên chấm điểm 7 tiêu chí cho shortlist 3 bài; lập luận bảo vệ Candidate #1 đạt 34/35 điểm. | Nhóm đạt đồng thuận tuyệt đối 5/5 thành viên chọn bài toán Xanh SM. |
+| **Kiểm chứng / research** | Cùng Kiên tra cứu tài liệu kỹ thuật của Uber Project RADAR, Grab Graph Anomaly Platform và Zendesk AI Dispute Routing; trích xuất bài học về kiến trúc lai Rule + ML và nguyên tắc con người duyệt (HITL). | Đảm bảo 3 link kiểm chứng là tài liệu thật, sống 100%, có dẫn chứng đối chiếu rành mạch. |
+| **Quy trình nhóm** | Cùng Tùng và Kiên xây dựng sơ đồ quy trình Trước/Sau (Mermaid), bảng before/after và xác định cơ chế quay về (Fallback) khi dịch vụ AI gặp sự cố. | Đạt trọn vẹn 12 điểm tiêu chí C8 của rubric nhóm. |
+| **Problem Statement** | Trực tiếp soạn thảo bản v0 và v1; thiết lập Success Metric có Baseline, Target, Cách đo và Boundary nghiêm ngặt. | Hoàn thiện tiêu chí C9, kết nối chặt chẽ giữa nỗi đau người dùng và bài toán kỹ thuật. |
+| **Mức can thiệp AI** | Tham gia phân tích ma trận độ mơ hồ × độ phức tạp; kiên quyết chọn mức **Workflow** và phản đối việc dùng Autonomous Agent. | Giữ cho phạm vi dự án an toàn, khả thi, tránh bẫy over-engineering. |
+| **Quyết định** | Phân tích 4 rủi ro lớn (Value, Usability, Feasibility, Viability); đề xuất quyết định **NOT YET (Chạy pilot 4 tuần trên Staging)** kèm ngưỡng dừng đo lường được. | Giữ tính trung thực học thuật, thừa nhận rào cản pháp lý Nghị định 13/2023/NĐ-CP và thiếu quyền truy cập production DB. |
 
 ---
 
 ## 5. Dùng AI
 
-| Checkpoint                          | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
-| ----------------------------------- | ---------------------------- | ---------------------- | -------------------------------- | -------------------------------------------- |
-| CP1 Scan                            |                              |                        |                                  |                                              |
-| CP2 Problem Card                    |                              |                        |                                  |                                              |
-| CP4 Research                        |                              |                        |                                  |                                              |
-| CP5 Quy trình                      |                              |                        |                                  |                                              |
-| CP5–6 Problem Statement            |                              |                        |                                  |                                              |
-| CP6 Mức can thiệp / quyết định |                              |                        |                                  |                                              |
+| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+|---|---|---|---|---|
+| **CP1 Scan** | Hỏi gợi ý thêm bài toán theo 4 lăng kính sau khi đã tự scan 8 bài. | Gợi ý bối cảnh về phân loại lỗi xe điện và đối soát nộp bài lab. | Gợi ý các giải pháp trá hình như 'Trợ lý AI toàn năng quản lý đội xe' và 'Chatbot an ủi khách hàng bị cước đắt'. | Bỏ toàn bộ chữ AI/chatbot, chuyển thành bài toán xử lý thông tin thực tế với số phút đo thật của bản thân. |
+| **CP2 Problem Card** | Đưa 3 card cho AI đóng vai PM hoài nghi để phản biện lỗ hổng. | Chỉ ra nguy cơ phạt oan tài xế nếu chỉ nhìn GPS đứng im và rào cản truy cập DB nội bộ GSM. | Gợi ý làm Agent tự động gọi điện đàm phán với tài xế và tự hoàn tiền ví (quá nguy hiểm và vi phạm bảo mật). | Tách quy trình thành 2 tầng độc lập: tầng cứu khách dùng Rule, tầng hậu kiểm dùng AI; khóa boundary không cho AI can thiệp tài chính. |
+| **CP4 Research** | Tìm kiếm case study thực tế của các hãng gọi xe công nghệ. | Gợi ý từ khóa Project RADAR của Uber và Graph prediction của Grab. | AI tóm tắt chung chung bằng văn mẫu marketing sáo rỗng ('bước đột phá cách mạng') và tự bịa số liệu phần trăm. | Tự mở link gốc trên engineering blog của Uber và Grab, đọc kiến trúc kỹ thuật thật và trích xuất đúng bài học về Human-in-the-loop. |
+| **CP5 Quy trình** | Hỗ trợ chuyển đổi mô tả các bước sang cú pháp Mermaid. | Sinh nhanh khung cú pháp code Mermaid flowchart. | AI tự ý vẽ thêm các bước 'AI tự động hoàn tiền' và bỏ quên bước con người kiểm tra (HITL). | Tự sửa lại code Mermaid, bổ sung khối duyệt của CSKH, ranh giới Boundary và nhánh Fallback an toàn. |
+| **CP5–6 Problem Statement** | Rà soát xem Problem Statement có bị lộ từ ngữ giải pháp (solution-first) không. | Bắt lỗi việc dùng từ 'hệ thống AI phát hiện' trong trường quy trình v0. | AI cố tình viết lại toàn bộ nội dung thành văn phong chào hàng bóng bẩy, thiếu số liệu đo lường. | Bác bỏ văn phong của AI, giữ nguyên mẫu 6 trường chuẩn Lean UX và tự điền baseline/target đo bằng phút thật. |
+| **CP6 Mức can thiệp / quyết định** | Phản biện lựa chọn giữa Go và Not Yet. | Nhắc nhở về quy định của Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân. | AI luôn có xu hướng mặc định khuyên 'Go ngay vì tiềm năng thị trường rất lớn'. | Bác bỏ kết luận của AI, chốt quyết định 'Not Yet' vì nhóm là sinh viên bên ngoài không có quyền truy cập DB thật của GSM, đây là sự thật khách quan. |
 
 ---
 
@@ -181,18 +181,46 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Khi lắng nghe phần trình bày của 4 bạn trong nhóm (Thành với các bài toán của lập trình viên như viết PR description, sinh unit test; Kiên với bài toán phản hồi review Vinpearl và gắn nhãn chuyến hủy Xanh SM; Tùng với bài toán audit chất lượng tư vấn bán hàng Pancake; Long với bài toán mua sắm siêu thị), tôi học được rằng mỗi người đều nhìn nhận vấn đề từ môi trường trải nghiệm thực tế mà họ tiếp xúc hàng ngày. Điểm làm tôi ấn tượng nhất là bài toán gắn nhãn chuyến hủy của Kiên (Problem Card #2 của Kiên). Ban đầu, khi làm Card #1 của mình, tôi hoàn toàn đứng ở góc nhìn của một hành khách bị hại — người đang đứng chờ xe dưới trời mưa và bực bội vì tài xế không di chuyển. Tôi chỉ nghĩ đến việc làm sao để thoát khỏi cuốc xe đó nhanh nhất. Nhưng khi nghe Kiên phân tích nỗi đau của nhân viên vận hành phải ngồi đọc hàng trăm dòng ghi chú và tin nhắn chat mỗi cuối ca để tìm hiểu nguyên nhân hủy chuyến, tôi nhận ra bài toán của mình mới chỉ giải quyết được một nửa phần ngọn. Sự kết hợp giữa góc nhìn hành khách (trước chuyến) và góc nhìn vận hành (sau chuyến) đã giúp nhóm xây dựng được một quy trình toàn diện, có giá trị kinh tế thực sự cho cả người dùng lẫn doanh nghiệp.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Nhóm tôi bị dính bẫy 'solution-first' rất nặng ở ngay đầu buổi làm việc khi vừa bước vào CP2 và CP3. Khi tôi vừa đưa ra vấn đề tài xế cố tình đứng im ngâm cuốc, gần như ngay lập tức cả tôi và các bạn đều hào hứng nhảy vào bàn về việc: *'Hay là mình xây dựng một con Chatbot AI tự động gọi điện hoặc nhắn tin chất vấn tài xế, nếu tài xế không trả lời thỏa đáng thì AI tự động khóa tài khoản và chuyển tiền bồi thường từ tài khoản tài xế sang ví của khách?'*. Chúng tôi đã bị cuốn theo cảm giác muốn dùng một công nghệ AI thật 'ngầu' để trừng phạt tài xế gian lận. Rất may là ở thời điểm đó, bạn Thành đã lên tiếng phản biện: *'Các ông bình tĩnh lại, mình đang nhảy thẳng vào giải pháp viển vông rồi. AI làm sao có thẩm quyền pháp lý để tự động trừ tiền trong tài khoản người khác? Nếu xe người ta kẹt xe thật mà AI phạt nhầm thì ai chịu trách nhiệm?'*. Câu hỏi đó như một gáo nước lạnh làm cả nhóm giật mình. Chúng tôi lập tức mở lại file `CHECKPOINTS.md` và cây Opportunity Solution Tree (OST) để rà soát lại. Nhóm nhận ra rằng nhu cầu cốt lõi của hành khách lúc đó chỉ đơn giản là: **được đổi xe khác đi ngay và không bị mất mã giảm giá**, họ không cần một con chatbot gọi điện đôi co. Nhóm đã dứt khoát gạch bỏ toàn bộ ý tưởng chatbot hay agent tự trị, quay về tập trung vẽ đúng quy trình hiện tại và tìm ra bottleneck thực sự.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Tôi đã có một lần đổi ý mang tính bước ngoặt ở CP3 và CP4. Ban đầu trong bản nháp Card #1, tôi thiết kế cơ chế xử lý bằng Rule-based cực đoan: *'Cứ sau 3 phút kể từ khi nhận chuyến mà xe không tiến lại gần điểm đón thì hệ thống tự động hủy cuốc và phạt tài xế'*. Khi tôi pitch ý này, bạn Thành đã chất vấn ngay: *'Nếu cuốc xe đón ở ngã tư Cổ Linh vào giờ cao điểm, xe bị chôn chân ở làn rẽ 4 nhịp đèn đỏ không nhích nổi một mét thì ông phạt oan người ta à?'*. Lúc đầu tôi vẫn cố bảo vệ quan điểm vì cho rằng 3 phút đứng im là bất thường. Nhưng đến CP4, khi trực tiếp phỏng vấn bác tài xế lái xe điện VF e34 ở khu vực Long Biên, bác đã gay gắt phản hồi đúng như Thành cảnh báo: *'Đường tan tầm kẹt cứng nhích từng tí một, xe đứng im chứ tôi có muốn thế đâu, các cháu làm thế là ép chết tài xế!'*. Lời nói thật của người trong cuộc khiến tôi hoàn toàn tỉnh ngộ. Tôi đã chủ động đề xuất với nhóm đổi ý 180 độ: **Tuyệt đối không dùng máy móc để phạt tự động**. Tôi tách bài toán thành 2 tầng độc lập: Tầng 1 chỉ dùng Rule để cứu khách hàng (cho khách đổi xe và giữ nguyên voucher để khách kịp giờ làm), còn việc xử lý trách nhiệm tài xế được chuyển về Tầng 2 hậu kiểm, nơi AI Workflow gom dữ liệu chat và trạng thái dòng xe để hỗ trợ chuyên viên CSKH con người (HITL) thẩm định công bằng. Sự đổi ý này đã cứu dự án khỏi một lỗ hổng logic chết người.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều làm tôi bất ngờ nhất khi kiểm chứng thực tế là **sự thật đằng sau hành vi của tài xế**. Trước đây, với tâm lý của một khách hàng nhiều lần phải đứng chờ xe trong bực bội, tôi luôn mang định kiến rằng 100% tài xế đứng im là do họ vô trách nhiệm, cố tình chây ì để ép khách hủy chuyến nhằm giữ tỷ lệ nhận cuốc. Nhưng khi ngồi nói chuyện trực tiếp với 2 tài xế Xanh SM quanh khu vực Ocean Park, tôi mới vỡ lẽ ra rất nhiều góc khuất mà người ngoài không thể biết: có những hôm đường nội khu giữa các tòa S1, S2 bị bảo vệ dựng rào chắn tạm thời để thi công sơn vạch kẻ đường, ô tô không thể đi xuyên qua mà phải chạy vòng ra đường gom mất thêm 7–8 phút; có những khu vực hầm tòa nhà cao tầng làm sóng định vị GPS bị dội (Urban Canyon), xe tài xế đã đỗ ngay trước sảnh nhưng chấm định vị trên app khách hàng lại hiển thị xe đang đứng im dưới lòng hồ cách đó 300 mét. Sự thật này xóa tan hoàn toàn cái nhìn phiến diện một chiều của tôi. Nó chứng minh cho tôi thấy giá trị cốt lõi của phương pháp The Mom Test: nếu bạn không đi nói chuyện với người thật về hành vi đã diễn ra trong quá khứ, bạn sẽ mãi mãi xây dựng những sản phẩm AI dựa trên sự suy diễn và định kiến sai lầm.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điều khó nhất đối với tôi khi viết Problem Statement là **viết Success Metric có đầy đủ Baseline, Target, Cách đo** và **thiết lập Boundary một cách chặt chẽ**. Rất dễ để buột miệng viết ra những câu mơ hồ như: *'Mục tiêu là giúp khách hàng đặt xe nhanh hơn và giảm bức xúc'*. Nhưng khi bắt tay vào điền bảng, rubric ép buộc phải trả lời: Nhanh hơn là từ bao nhiêu phút xuống bao nhiêu phút? Đo bằng công cụ gì? Lấy mốc thời gian nào? Tôi đã phải ngồi bấm giờ lại lịch sử các cuốc xe cũ của mình để tìm ra con số baseline thực tế: từ lúc xe đứng im đến khi khách tìm được xe mới mất trung bình 25–35 phút, từ đó mới dám đặt target là dưới 5 phút. Bên cạnh đó, việc định nghĩa Boundary (Ranh giới AI không được làm gì) cũng là một thử thách lớn về mặt tư duy. Nó đòi hỏi tôi phải từ bỏ tham vọng tự động hóa hoàn toàn để chấp nhận các điểm nghẽn an toàn: AI không được đụng vào ví tiền, AI không được tự ý phạt đối tác, và dữ liệu bắt buộc phải được che mờ (masking) theo Nghị định 13/2023/NĐ-CP. Viết Problem Statement khó vì nó buộc người làm kỹ thuật phải đối diện với sự thật về giới hạn của công nghệ.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu được làm lại buổi lab này từ đầu, tôi sẽ **tiến hành phỏng vấn người thật ngay từ cuối CP1** thay vì đợi đến CP4 mới đi hỏi. Nếu tôi nói chuyện với bác tài xế sớm hơn 2 tiếng đồng hồ, tôi đã không mất thời gian ngồi vẽ quy trình phạt tự động ở CP2 để rồi sau đó phải đập đi sửa lại. Thứ hai, tôi sẽ phản biện nhóm quyết liệt hơn ngay từ bước gom cluster ở CP3. Ở buổi thảo luận đó, nhóm tôi đã mất hơn 20 phút tranh luận dây dưa về ý tưởng kiểm tra thuốc cận date của Tùng và kiểm tra dị ứng của Long — những ý tưởng mà xét về tính khả thi dữ liệu và rào cản bảo mật y tế là gần như không thể làm được trong một buổi lab 4 tiếng. Nếu tôi dứt khoát chỉ ra rào cản đó sớm hơn bằng các tiêu chí của ma trận Feasibility/Viability, nhóm đã có thể tiết kiệm được thời gian đó để đào sâu hơn vào việc thiết kế bộ test eval cho bài toán Xanh SM.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+1. **Problem:** Hành khách đặt xe Xanh SM bị mắc kẹt thụ động 25–35 phút khi gặp tài xế ngâm cuốc và phải tự chụp màn hình giải trình để không mất mã ưu đãi; trong khi nhân viên CSKH mất 3–4 phút/ticket đọc dò tin nhắn chat thủ công để giải quyết tranh chấp hủy chuyến.
+2. **Quy trình:** Nhóm phân tách thành hai tầng độc lập: Tầng 1 sử dụng Rule-based bắt sự kiện xe không di chuyển sau 3 phút để kích hoạt quyền đổi xe giữ nguyên voucher cho khách; Tầng 2 sử dụng AI Workflow trích xuất ngữ cảnh chat và trạng thái giao thông để tạo bản tóm tắt bằng chứng cho kiểm soát viên CSKH con người (HITL) phê duyệt.
+3. **Metric:** Thời gian giải cứu khách hàng giảm từ 25-35 phút xuống dưới 5 phút; 100% mã giảm giá được tự động bảo lưu; thời gian thẩm định của CSKH giảm từ 4 phút xuống dưới 30 giây; tỷ lệ xử phạt nhầm tài xế (False Positive) duy trì dưới 5%.
+4. **Boundary:** AI tuyệt đối không can thiệp vào tài khoản ví/ngân hàng để tự ý trừ hay hoàn tiền; không được tự động ban hành quyết định xử phạt tài xế; 100% dữ liệu tọa độ và tin nhắn phải được che mờ thông tin nhận danh cá nhân (PII Masking) trước khi đưa vào mô hình.
+5. **Mức can thiệp AI:** Lựa chọn **Workflow** (kết hợp Rule-based ở frontend điều phối và AI Analysis Pipeline ở backend quản trị), loại bỏ hoàn toàn Autonomous Agent để triệt tiêu rủi ro ảo giác và thất thoát tài chính.
+6. **Quyết định:** Đưa ra kết luận **NOT YET** — Chưa triển khai vào sản phẩm thương mại thật mà thực hiện chương trình Pilot 4 tuần trên môi trường Staging Sandbox với dữ liệu giả lập (Mock Telemetry Sandbox) do rào cản pháp lý bảo vệ dữ liệu cá nhân (Nghị định 13/2023/NĐ-CP) và việc nhóm chưa có quyền truy cập cơ sở dữ liệu nội bộ của GSM.
 
 ---
 
 ## 7. Tài liệu tham khảo
+
+1. Uber Engineering (2019), *Project RADAR: Intelligent Early Fraud Detection System with Humans in the Loop*, [https://www.uber.com/blog/project-radar-intelligent-early-fraud-detection/](https://www.uber.com/blog/project-radar-intelligent-early-fraud-detection/)
+2. Grab Tech Blog (2021), *Graph-based Prediction Platform for Fraud Detection*, [https://engineering.grab.com/graph-based-prediction-platform](https://engineering.grab.com/graph-based-prediction-platform)
+3. Google PAIR, *People + AI Guidebook: User Needs, Defining Success & Errors*, [https://pair.withgoogle.com/](https://pair.withgoogle.com/)
+4. Anthropic Research (2024), *Building Effective Agents*, [https://www.anthropic.com/research/building-effective-agents](https://www.anthropic.com/research/building-effective-agents)
+5. Chính phủ Việt Nam (2023), *Nghị định số 13/2023/NĐ-CP về Bảo vệ dữ liệu cá nhân*.
+6. Marty Cagan (Silicon Valley Product Group), *Inspired: How to Create Tech Products Customers Love — The Four Big Risks*.
+7. Rob Fitzpatrick, *The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you*.
+8. Teresa Torres, *Continuous Discovery Habits: Opportunity Solution Trees*.
