@@ -12,11 +12,11 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Lý Thanh Lâm | 2A202603475 | Nhóm trưởng, Điều phối chung, Phụ trách Problem Statement & Đánh giá rủi ro/Quyết định | https://github.com/LysLama |
-| 2 | Tô Minh Thành | 2A202603439 | Phản biện độc lập (Challenger), Phụ trách AI Canvas & Google PAIR | https://github.com/thanhtmhe186559 |
-| 3 | Phạm Trung Kiên | 2A202603479 | Phụ trách Nghiên cứu giải pháp (Research Lead) & Đối chiếu quy trình nghiệp vụ Xanh SM | https://github.com/trungkienpham0607 |
-| 4 | Nguyễn Thanh Tùng | 2A202603446 | Phụ trách Mô hình hóa quy trình (Process Modeler) & Xây dựng Bộ dữ liệu Eval (Eval Lead) | https://github.com/hunter2996 |
-| 5 | Đoàn Gia Long | 2A202603443 | Phụ trách Kiểm chứng thực địa (Validation Lead - Mom Test phỏng vấn) & Ghi chép | https://github.com/DoanGiaLong |
+| 1 | Lý Thanh Lâm | 2A202603475 | | https://github.com/LysLama |
+| 2 | Tô Minh Thành | 2A202603439 | | https://github.com/thanhtmhe186559 |
+| 3 | Phạm Trung Kiên | 2A202603479 | | https://github.com/trungkienpham0607 |
+| 4 | Nguyễn Thanh Tùng | 2A202603446 | | https://github.com/hunter2996 |
+| 5 | Đoàn Gia Long | 2A202603443 | | https://github.com/DoanGiaLong |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
