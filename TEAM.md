@@ -38,115 +38,20 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### LyThanhLam-2A202603475
+### HoVaTen-MSSV
 
 **Phần việc phụ trách:**
 
-- Nhóm trưởng điều phối tiến độ, quản trị repo GitHub chung của nhóm Bàn 3.
-- Phụ trách chính CP3 (Hội tụ nhóm & Dựng cây Opportunity Solution Tree).
-- Phụ trách CP5 (Problem Statement v0) và CP6 (Đánh giá 4 rủi ro, phân tích rào cản dữ liệu & đề xuất Quyết định Not Yet kèm ngưỡng dừng).
-- Hỗ trợ CP4 (Research giải pháp Uber/Grab) và rà soát chất lượng tổng thể `group_report.md`.
+-
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-- Quản trị repo, phân công vai trò và checkpoint cho 5 thành viên trong `TEAM.md`.
-- Đóng góp Card #1 về "Tài xế Xanh SM ngâm cuốc ép khách tự hủy", làm tiền đề then chốt kết hợp với bài gắn nhãn hủy chuyến của Kiên để nhóm hội tụ thành đề tài chung.
-- Trực tiếp xây dựng cây Opportunity Solution Tree (OST) tách bạch giữa Outcome đo được, Opportunity (pain) và gạch bỏ các giải pháp đội lốt.
-- Soạn thảo Problem Statement v0 và v1, thiết lập Boundary nghiêm ngặt (không cho AI tự động phạt tài xế hoặc tự ý trừ/hoàn tiền ví hành khách).
-- Phân tích 4 rủi ro lớn (Value, Usability, Feasibility, Viability) dưới góc độ bảo mật dữ liệu theo Nghị định 13/2023/NĐ-CP và ranh giới dữ liệu GSM, chốt quyết định Not Yet trung thực và khả thi.
+-
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- `report/team/group_report.md`: Mục 1, Mục 2.3 (Cây OST), Mục 2.4 (Bảng chấm điểm & lý do chọn), Mục 5 (Problem Statement v0), Mục 7 (Problem Statement v1), Mục 8 (4 rủi ro & Quyết định Not Yet).
-- `TEAM.md`: Bảng thành viên, phân công checkpoint và mục cá nhân.
-- Commits trên branch `main` và `2A202603475-LyThanhLam`.
+-
 
 **Điều mình học được từ phần nhóm:**
 
-- Bài học lớn nhất là chuyển từ tư duy "Solution-first" sang "Problem-first": ở bước cứu khách hàng đang đứng chờ xe, chỉ cần tập luật Rule-based đơn giản là đã giải quyết được 80% bức xúc mà không cần mô hình AI phức tạp.
-- Nhận thức sâu sắc về ranh giới dữ liệu và pháp lý doanh nghiệp: một nhóm học viên làm lab bên ngoài không thể tự tiện tuyên bố có quyền can thiệp vào cơ sở dữ liệu nội bộ của GSM hay tự động ra lệnh bồi hoàn tiền; một quyết định "Not Yet" có cơ sở dữ liệu và lộ trình pilot staging 4 tuần giá trị và đáng tin cậy hơn nhiều so với một quyết định "Go" viển vông.
-
----
-
-### ToMinhThanh-2A202603439
-
-**Phần việc phụ trách:**
-
-- Phản biện độc lập (Challenger), phụ trách chính CP6 (AI Canvas & 2 câu hỏi Google PAIR), hỗ trợ CP4 kiểm chứng.
-
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
-- Đóng góp các câu hỏi phản biện sắc bén trong buổi Pitch CP3 (phản biện về rủi ro phạt oan tài xế nếu chỉ dựa vào GPS đứng im).
-- Điền AI Canvas rút gọn và trả lời 2 câu hỏi của Google PAIR ở CP6.
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
-- `report/team/group_report.md`: Mục 2.1 (câu hỏi phản biện), Mục 6.3 (AI Canvas), Mục 6.4 (Google PAIR).
-
-**Điều mình học được từ phần nhóm:**
-
-- (Thành tự cập nhật thêm trải nghiệm cá nhân)
-
----
-
-### PhamTrungKien-2A202603479
-
-**Phần việc phụ trách:**
-
-- Phụ trách chính CP4 (Research giải pháp kỹ thuật đã có), hỗ trợ CP5 (Mô hình hóa quy trình Xanh SM).
-
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
-- Đóng góp góc nhìn quy trình nghiệp vụ Xanh SM từ Card cá nhân về gắn nhãn chuyến hủy.
-- Nghiên cứu 3 case thực tế (Uber Project RADAR, Grab Graph-based Prediction, Zendesk Fraud Routing), xác minh link thật và phân tích khoảng trống áp dụng cho Xanh SM.
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
-- `report/team/group_report.md`: Mục 2.1 (Pitch), Mục 3.3 (Bảng research giải pháp có link xác minh).
-
-**Điều mình học được từ phần nhóm:**
-
-- (Kiên tự cập nhật thêm trải nghiệm cá nhân)
-
----
-
-### NguyenThanhTung-2A202603446
-
-**Phần việc phụ trách:**
-
-- Phụ trách chính CP5 (Mô hình hóa quy trình Trước/Sau bằng Mermaid) và CP6 (Bộ 10 cặp Eval mẫu - Bonus B3).
-
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
-- Vẽ sơ đồ quy trình Trước/Sau, chỉ rõ điểm Human-in-the-loop (HITL), Boundary và cơ chế Fallback khi hệ thống gặp sự cố.
-- Xây dựng file bộ dữ liệu kiểm thử 10 cặp Input/Output mẫu cho bước phân loại khiếu nại (`report/assets/cp6-eval-set-10-pairs.md`).
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
-- `report/team/group_report.md`: Mục 4 (Quy trình Hiện tại và Tương lai), Mục 4.3 (Bảng before/after).
-- `report/assets/cp6-eval-set-10-pairs.md`.
-
-**Điều mình học được từ phần nhóm:**
-
-- (Tùng tự cập nhật thêm trải nghiệm cá nhân)
-
----
-
-### DoanGiaLong-2A202603443
-
-**Phần việc phụ trách:**
-
-- Phụ trách chính CP4 (Kiểm chứng thực địa qua phỏng vấn người thật - Mom Test), thư ký ghi chép.
-
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
-- Xây dựng Assumption Map phân loại theo 4 nhóm rủi ro (Value, Usability, Feasibility, Viability).
-- Thực hiện và ghi chép 5 bản phỏng vấn nhanh (Interview Snapshots) với tài xế và hành khách để đạt mốc Bonus B2 (+4 điểm).
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
-- `report/team/group_report.md`: Mục 3.1 (Assumption Map), Mục 3.2 (5 Interview Snapshots).
-
-**Điều mình học được từ phần nhóm:**
-
-- (Long tự cập nhật thêm trải nghiệm cá nhân)
+-
