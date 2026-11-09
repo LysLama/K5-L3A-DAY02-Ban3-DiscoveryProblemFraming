@@ -12,10 +12,10 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 | Lý Thanh Lâm | 2A202603475 | | https://github.com/LysLama|
 | 2 | | | | |
 | 3 | | | | |
-| 4 | | | | |
+| 4 | Nguyễn Thanh Tùng | 2A202603446 |  | https://github.com/hunter2996 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
