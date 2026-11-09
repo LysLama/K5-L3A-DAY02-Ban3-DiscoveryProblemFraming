@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Lý Thanh Lâm | 2A202603475 | | https://github.com/LysLama |
-| 2 | Tô Minh Thành | 2A202603439 | | https://github.com/thanhtmhe186559 |
+| 2 | Tô Minh Thành | 2A202603439 | | https://github.com/thanh211124 |
 | 3 | Phạm Trung Kiên | 2A202603479 | | https://github.com/trungkienpham0607 |
 | 4 | Nguyễn Thanh Tùng | 2A202603446 | | https://github.com/hunter2996 |
 | 5 | Đoàn Gia Long | 2A202603443 | | https://github.com/DoanGiaLong |
@@ -38,20 +38,26 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### ToMinhThanh-2A202603439
 
 **Phần việc phụ trách:**
 
--
+- CP3: hỗ trợ Lý Thanh Lâm và Phạm Trung Kiên trong hội tụ nhóm.
+- CP4: hỗ trợ Đoàn Gia Long kiểm chứng.
+- CP6: phụ trách ma trận, AI Canvas, PAIR, bộ eval 10 cặp và Problem Statement v1; hỗ trợ Lý Thanh Lâm đánh giá rủi ro và quyết định.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Nêu phản biện rằng chỉ dựa vào GPS đứng im không đủ phân biệt tài xế cố tình ngâm cuốc với kẹt xe hoặc lỗi định vị; phản biện này được ghi trong bảng pitch CP3.
+- Theo phân công CP6, phụ trách các đầu ra được trình bày trong báo cáo nhóm: ma trận mức can thiệp, AI Canvas, PAIR và Problem Statement v1; bộ 10 cặp eval có file riêng.
+- Báo cáo nhóm ghi quyết định Not Yet, pilot 4 tuần trên Staging/Mock Sandbox. Phần nào trong quyết định tôi trực tiếp thực hiện cần được tôi xác nhận trước khi nộp.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- `report/team/group_report.md`: mục 2.1 (phản biện CP3), mục 6 (ma trận và AI Canvas), mục 7 (PAIR và Problem Statement v1), mục 8 (quyết định).
+- `report/assets/cp6-eval-set-10-pairs.md`: bộ eval 10 cặp.
+- `TEAM.md`: bảng phân công CP3, CP4 và CP6.
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Tự bổ sung một điều học được từ trải nghiệm thực tế của mình; không suy ra reflection chỉ từ phân công hoặc nội dung báo cáo nhóm.
