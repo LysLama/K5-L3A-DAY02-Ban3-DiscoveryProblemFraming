@@ -130,7 +130,7 @@ Quy trình nháp hiện tại:
 |---|---|---|
 | Lý do pitch bị lệch trọng tâm. “Đảm bảo độ ngon của món ăn” không liên quan đến dị ứng | Đồng ý |Bỏ ý “độ ngon”, viết lại lý do chỉ xoay quanh an toàn sức khỏe |
 | Chưa có bằng chứng thật. Mới có “2 phút/lượt”, chưa nói bố mẹ dị ứng gì, chưa rõ đã từng gặp sự cố hay suýt gặp chưa | Đồng ý | Bổ sung nhóm chất dị ứng cụ thể và hỏi bố mẹ xem đã từng có sự cố chưa
-| Giá trị không nằm ở thời gian. Tiết kiệm 2-3 phút/lượt thì nhỏ, dễ bị hỏi “có đáng làm không?” | Đồng ý |y
+| Giá trị không nằm ở thời gian. Tiết kiệm 2-3 phút/lượt thì nhỏ, dễ bị hỏi “có đáng làm không?” | Đồng ý |Chuyển mục tiêu chính sang rủi ro sức khỏe, đổi success metric thành “không sản phẩm không phù hợp”
 
 
 ---
