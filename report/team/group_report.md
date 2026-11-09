@@ -5,10 +5,10 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
-- Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Tên nhóm: Ban3
+- Thành viên: xem `TEAM.md` (Lý Thanh Lâm, Tô Minh Thành, Phạm Trung Kiên, Nguyễn Thanh Tùng, Đoàn Gia Long)
+- Candidate problem được chọn (1 câu): Hệ thống phát hiện tài xế ngâm cuốc và tự động phân loại khiếu nại hủy chuyến cho ứng dụng gọi xe Xanh SM.
+- Quyết định cuối: Not Yet (Chạy pilot 4 tuần trên môi trường Staging/Mock Sandbox trước khi xem xét tích hợp)
 
 ---
 
@@ -18,26 +18,30 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Lý Thanh Lâm | Khi đặt xe Xanh SM mà tài xế nhận cuốc nhưng đứng im/đi ngược hướng "ngâm cuốc", tôi muốn hệ thống ghi nhận trạng thái bất thường để hỗ trợ đổi tài xế hoặc hủy không mất phí ngay, để không mất 30–60 phút chờ đợi và trễ việc. | Hành khách đặt xe Xanh SM (tuyến Ocean Park – nội thành) | Bước 2 (chờ 12 phút nhìn map xe đứng im) và Bước 4 (8 phút chụp màn hình làm bằng chứng hủy) | |
+| 2 | Lý Thanh Lâm | Khi gom dữ liệu bản vẽ/tài liệu scan để kiểm thử OCR, tôi muốn lọc nhanh ảnh mờ và xoay phẳng các ảnh bị chụp nghiêng/ngược trước khi đưa vào pipeline, để tiết kiệm hàng giờ căn chỉnh thủ công từng file. | Kỹ sư / Sinh viên xây dựng pipeline OCR | Bước 3 (75 phút ngồi duyệt mắt từng ảnh lọc mờ và xoay tay 90°/180° cho 50–60 ảnh) | |
+| 3 | Lý Thanh Lâm | Khi khách đặt xe tại các khu đô thị nhiều tòa nhà (S1, S2 Ocean Park) bị lệch ghim hoặc vướng phân luồng, người tài xế muốn xác nhận ngay sảnh đón chính xác và gửi vị trí thực tế, để đón khách nhanh và không bị hủy chuyến oan. | Tài xế xe công nghệ (Xanh SM, Grab, Be) | Bước 3 (8 phút tài xế chạy vòng quanh giữa các tòa S1–S2 nhìn biển tìm sảnh đón) | |
+| 4 | Tô Minh Thành | Khi chuẩn bị gửi thay đổi để review, tôi muốn trình bày lý do, phạm vi và cách kiểm thử rõ ràng, để reviewer đánh giá được thay đổi mà không phải hỏi lại thông tin cơ bản. | Junior Software Engineer | Bước 3 (8 phút đọc lại Jira/diff) và Bước 4 (12 phút soạn mô tả PR theo template) | |
+| 5 | Tô Minh Thành | Khi hoàn thành một API CRUD cơ bản, tôi muốn bao phủ các nhánh quan trọng bằng unit test mà không phải lặp lại nhiều thao tác viết mã, để giảm nguy cơ hồi quy. | Backend Developer | Bước 3 (20–30 phút nghĩ và viết test case cho các luồng ngoại lệ) | |
+| 6 | Tô Minh Thành | Khi điều tra lỗi được báo trong Sentry/Kibana, tôi muốn xác định được đoạn log và bước tiếp theo cần kiểm tra, để rút ngắn thời gian chẩn đoán. | Developer, QA | Bước 2–3 (15–20 phút đọc và lọc hàng trăm dòng log phân tán để tìm stack trace) | |
+| 7 | Phạm Trung Kiên | Khi inbox đầy review 1–3 sao trên Booking, Agoda và Google, tôi muốn hiểu khách đang phàn nàn gì rồi viết thư trả lời đúng giọng khách sạn, để kịp hạn 24 giờ và các ca không viết mỗi người một kiểu. | Nhân viên CSKH property Vinpearl | Bước soạn thư trả lời đúng chuẩn SOP và giọng điệu khách sạn (12–15 phút/review) | |
+| 8 | Phạm Trung Kiên | Khi đóng ca, tôi muốn gắn một nguyên nhân gốc cho từng chuyến hủy (tài xế muộn / khách hủy / app lỗi), để sáng hôm sau khỏi đọc lại đống ghi chú khi làm báo cáo tuần. | Nhân viên chất lượng Xanh SM | Đối chiếu ghi chú của khách và tài xế với GPS để gắn nhãn thủ công (1–2 phút/note, dồn ca mất cả tiếng) | |
+| 9 | Phạm Trung Kiên | Khi bệnh nhân sắp vào phòng, tôi muốn gom tiền sử, dị ứng và thuốc đang dùng từ vài lần khám cũ thành một trang, để bác sĩ không hỏi lại từ đầu. | Điều dưỡng tiền khám Vinmec | Lướt hệ thống EMR và ghi tay bản tóm tắt tiền sử (8–10 phút/ca) | |
+| 10 | Nguyễn Thanh Tùng | Khi kiểm tra chất lượng tư vấn của 10 saler mỗi ngày trên Pancake, tôi muốn nhanh chóng phát hiện các lỗi sai về tư vấn liều lượng, chống chỉ định và thiếu ưu đãi, để kịp thời chấn chỉnh trước khi đơn hàng xuất kho. | Quản lý chất lượng (QA), Saler | Đọc lội từng đoạn chat dài 20–30 tin nhắn trên Pancake để tìm lỗi sai (90–120 phút/ngày) | |
+| 11 | Nguyễn Thanh Tùng | Khi lead mới đổ về từ quảng cáo vào đầu ca sáng, tôi muốn lọc trùng số điện thoại và phân bổ ngay cho đúng telesale đang trực, để khách được gọi trong vòng 15 phút đầu. | Quản lý vận hành telesale | Tải file Excel, rà trùng 150 số điện thoại thủ công trên CRM (45 phút/sáng) | |
+| 12 | Nguyễn Thanh Tùng | Khi kiểm kê kho hàng định kỳ ngày 25 hàng tháng, tôi muốn lọc ra toàn bộ sản phẩm còn hạn dùng dưới 6 tháng trên kệ kho, để lên kế hoạch xả hàng hoặc đổi trả nhà cung cấp kịp thời. | Quản lý kho dược, Kế toán kho | Đối chiếu danh mục 85 mã thuốc giữa thực tế trên kệ và file Excel date (mất 6 tiếng) | |
+| 13 | Đoàn Gia Long | Khi tìm được đồ cần mua ở siêu thị, tôi muốn đọc và so sánh nhanh thông tin các sản phẩm, để chọn được sản phẩm phù hợp mà không mất nhiều thời gian. | Người mua sắm cho gia đình | Bước 2–4 (đọc nhãn chữ nhỏ, nhiều thành phần lạ, phải tự so sánh mất ~1–2 phút/sản phẩm) | |
+| 14 | Đoàn Gia Long | Khi đã chọn sản phẩm để nấu ăn, tôi muốn biết chắc sản phẩm không có chất bố mẹ bị dị ứng, để cả nhà ăn an toàn. | Người mua sắm cho gia đình | Bước 2–3 (thành phần dài, đối chiếu từng chất với danh sách dị ứng mất 1–2 phút/sản phẩm) | |
+| 15 | Đoàn Gia Long | Khi đang trên đường từ công ty đến siêu thị, tôi muốn nhanh chóng có món ăn phù hợp khẩu vị cả nhà và khác bữa trước, để mua đúng nguyên liệu. | Người nấu cơm tối gia đình | Bước 2–3 (nghĩ món ăn mới vừa hợp khẩu vị từng người trong nhà mất 10–15 phút) | |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| **A — Vận hành di chuyển & Ứng dụng gọi xe (Mobility & Ride-hailing)** | #1, #3, #8 | Sự lệch pha thông tin vị trí và trạng thái di chuyển thời gian thực giữa tài xế và hành khách dẫn đến thời gian chờ đợi thụ động, hủy chuyến và tranh chấp cước/điểm thưởng khiếu nại. |
+| **B — Kỹ thuật phần mềm & Xử lý dữ liệu (Software Engineering & Data Ops)** | #2, #4, #5, #6 | Lập trình viên và kỹ sư AI mất nhiều thời gian đọc lại ngữ cảnh, lặp lại các thao tác viết/kiểm thử mã nguồn thủ công và rà soát lỗi trên các tệp log/dữ liệu phân tán. |
+| **C — Vận hành thương mại, CSKH & Quản lý nghiệp vụ (Operations, CS & Auditing)** | #7, #9, #10, #11, #12 | Nhân viên nghiệp vụ/CSKH phải đọc duyệt thủ công khối lượng lớn văn bản, hội thoại và bảng biểu rời rạc để đối chiếu quy chuẩn dịch vụ hoặc phát hiện sai sót trước khi phê duyệt. |
+| **D — Đời sống tiêu dùng & Hỗ trợ sinh hoạt cá nhân (Consumer Lifestyle & Nutrition)** | #13, #14, #15 | Người tiêu dùng mất thời gian đọc lướt các nhãn thành phần chữ nhỏ và cân nhắc khẩu vị/dị ứng thủ công trong điều kiện thời gian mua sắm gấp gáp hàng ngày. |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
