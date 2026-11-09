@@ -14,7 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Lý Thanh Lâm | 2A202603475 | | https://github.com/LysLama |
 | 2 | Tô Minh Thành | 2A202603439 | | https://github.com/thanh211124 |
-| 3 | Phạm Trung Kiên | 2A202603479 | | https://github.com/trungkienpham0607 |
+| 3 | Phạm Trung Kiên | 2A202603479| |https://github.com/trungkienpham0607 |
 | 4 | Nguyễn Thanh Tùng | 2A202603446 | | https://github.com/hunter2996 |
 | 5 | Đoàn Gia Long | 2A202603443 | | https://github.com/DoanGiaLong |
 
@@ -121,3 +121,32 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Điều mình học được từ phần nhóm:**
 
 - Tự bổ sung một điều học được từ trải nghiệm thực tế của mình; không suy ra reflection chỉ từ phân công hoặc nội dung báo cáo nhóm.
+
+---
+
+### PhamTrungKien-2A202603479
+
+**Phần việc phụ trách:**
+
+- CP3: hỗ trợ Lý Thanh Lâm và Tô Minh Thành hội tụ nhóm (pitch, cluster, chấm điểm).
+- CP4 Research: phụ trách chính bảng research giải pháp đã có (Uber RADAR, Grab, Zendesk); Lý Thanh Lâm hỗ trợ.
+- CP5: hỗ trợ Nguyễn Thanh Tùng vẽ quy trình trước/sau, HITL và fallback.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 candidate: Vinpearl trả lời review OTA, gắn nhãn hủy chuyến Xanh SM, tóm tắt tiền sử Vinmec (bảng pitch #7–#9).
+- Đặt câu hỏi phản biện cho bài PR của Thành và bài QA Pancake của Tùng; nhận phản biện về quyền OTA/EMR và gợi ý ghép card gắn nhãn với bài ngâm cuốc.
+- Đổi hướng: bỏ bảo lưu Vinpearl làm đề tài chính; đóng góp card gắn nhãn hủy vào tầng hậu kiểm của candidate #1.
+- Làm bảng research 3 nguồn có link đã tự mở; rút bài học Rule cứu khách + AI hậu kiểm + người duyệt.
+- Góp ý sơ đồ tương lai tách tầng Rule và AI Workflow, boundary không tự phạt/tự hoàn tiền; ủng hộ quyết định Not Yet.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`: mục 2.1 (pitch #7–#9 và câu hỏi phản biện), mục 2.2–2.4 (cluster A, lý do loại Vinpearl, xử lý bất đồng), mục 3.3 (research), mục 4.2 (quy trình tương lai / boundary).
+- `report/individual/2A202603479_PhamTrungKien.md`: CP1–CP2 và nhật ký tham gia mục 4–6.
+- `TEAM.md`: dòng phân công CP3, CP4 Research, CP5 quy trình.
+
+**Điều mình học được từ phần nhóm:**
+
+- Candidate có deep-dive sẵn chưa chắc thắng nếu nhóm không đụng được dữ liệu thật trong lab.
+- Card “gắn nhãn hủy chuyến” của mình không bị bỏ: nó trở thành nửa sau của bài ngâm cuốc (AI hỗ trợ CSKH hậu kiểm), còn nửa trước cứu khách chỉ cần Rule.
