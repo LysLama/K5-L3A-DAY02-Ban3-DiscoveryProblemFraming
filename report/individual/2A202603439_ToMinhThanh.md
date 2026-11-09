@@ -169,33 +169,25 @@ HIỆN TẠI — 25 phút
 
 ## 6. Reflection (CP7)
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-_Tự viết reflection dựa trên một candidate cụ thể đã nghe trong buổi nhóm._
+6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?
+Tôi nhận ra rào cản lớn nhất khi giải quyết vấn đề bằng AI trong thực tế không chỉ nằm ở kỹ thuật, mà nằm ở quyền truy cập dữ liệu và quy định ngành. Ví dụ, bài toán y tế (EMR) của Tùng hay bài review OTA Vinpearl của Kiên rất có giá trị, nhưng sinh viên từ bên ngoài không thể lấy được dữ liệu thật để kiểm chứng (rủi ro Viability). Trong khi đó, bài toán gọi xe Xanh SM của Lâm lại cực kỳ sát sườn, nhóm dễ dàng đóng vai hành khách trải nghiệm hoặc ra ngã tư phỏng vấn trực tiếp tài xế. Một problem tốt phải là problem mà nhóm có khả năng tiếp cận và kiểm chứng.
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-_Tự mô tả tình huống thực tế và cách nhóm điều chỉnh; có thể đối chiếu phần phản biện và pivot trong `group_report.md`._
+6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?
+Có. Lúc mới chọn đề tài Xanh SM, ý định ban đầu của nhóm là nhắm thẳng vào giải pháp trừng phạt: "Làm một mô hình AI dự đoán tài xế nào hay ngâm cuốc để khóa tài khoản tự động". Lúc đó, nhóm chỉ đứng dưới góc độ bức xúc của hành khách. Tuy nhiên, tôi và Long đã kịp thời đặt câu hỏi: "Nếu dựa vào GPS đứng im 3 phút để tự động phạt, lỡ tài xế kẹt đèn đỏ thì sao?". Nhóm chợt nhận ra mình đang quy chụp vấn đề nên đã dừng ngay việc nghĩ thuật toán để tiến hành phỏng vấn tài xế, từ đó mới tìm ra được bản chất thật của sự việc.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-_Tự kể lần phản biện có thật. Đoạn cũ nhắc “Huy”, người không có trong danh sách thành viên, và một metric PR không thuộc candidate nhóm đã chọn nên đã được bỏ._
+6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.
+Có, tôi đã thay đổi hoàn toàn kỳ vọng về metric khi pitch bài toán cá nhân (AI viết PR). Ban đầu, tôi dùng thời gian chờ review (1-2 ngày) làm pain point và kỳ vọng AI viết PR tốt sẽ giảm con số này. Tuy nhiên, Kiên đã phản biện cực kỳ thực tế: "Thời gian chờ lâu thường do Senior bận fix bug hoặc họp, chứ không hẳn do PR thiếu mô tả. Ông đo lường tác động đó kiểu gì?". Tôi nhận ra mình đã mắc lỗi quy kết nhân quả sai (correlation vs causation). Do đó, tôi đổi ý, sửa lại Impact và chỉ tập trung đo lường đúng phạm vi hẹp: "giảm thời gian soạn thảo của Junior" và "giảm số comment yêu cầu bổ sung context".
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-_Tự viết từ trải nghiệm kiểm chứng mình trực tiếp tham gia. Phân biệt rõ nghiên cứu candidate PR cá nhân với 5 interview snapshots của nhóm; không nhận phần phỏng vấn của thành viên khác là của mình._
+6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?
+Điều làm tôi bất ngờ nhất là buổi phỏng vấn bác tài xế Xanh SM. Ban đầu cả nhóm đinh ninh rằng việc xe đứng im là 100% do tài xế gian lận (chờ khách hủy để khỏi bị trừ điểm). Nhưng bác tài đã cung cấp một góc nhìn trái ngược hoàn toàn: có những nút giao như Cổ Linh kẹt cứng 4 nhịp đèn đỏ, hoặc định vị bị dội sóng (drift) quanh các tòa nhà cao tầng. Tài xế cũng là nạn nhân và họ mất tới 20 phút gọi tổng đài giải trình để xin không bị phạt oan. Tín hiệu này đã thay đổi hoàn toàn cục diện kiến trúc của nhóm: tuyệt đối không dùng AI/Rule để tự phạt tiền mà bắt buộc phải có bước con người hậu kiểm (HITL).
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
-_Tự trả lời theo Problem Statement v1 của nhóm; đoạn cũ nói về metric cho PR cá nhân, không phải problem nhóm đã chọn._
+6.5. Điều khó nhất khi viết Problem Statement là gì?
+Điều khó nhất là bóc tách các Actor và định hình đúng Boundary (ranh giới). Ban đầu, Problem Statement v0 của nhóm ôm đồm cả việc cứu khách hàng lẫn xử phạt tài xế vào chung một quy trình. Sau nhiều lần chỉnh sửa, chúng tôi mới tìm ra cấu trúc đúng: tách làm 2 tầng. Tầng 1 chỉ dùng Rule-based (nút bấm) để cứu khách ngay lập tức sau 3 phút. Tầng 2 mới là sân chơi của AI (AI Workflow) để đọc tin nhắn chat hỗ trợ CSKH phân loại nguyên nhân. Việc kiềm chế không đưa AI vào khâu phản ứng tức thời thời gian thực là một quyết định kiến trúc rất khó.
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-_Tự viết từ trải nghiệm thật trong nhóm; đoạn cũ nói về phương án PR template và cần được thay bằng điều bạn thực sự sẽ làm khác cho bài Xanh SM._
+6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?
+Nếu làm lại, tôi sẽ phản biện mạnh hơn ở bước CP4 (Kiểm chứng rủi ro Viability). Bài toán lấy log định vị GPS và nội dung tin nhắn chat của hành khách vướng rào cản cực kỳ lớn về Nghị định 13/2023/NĐ-CP bảo vệ dữ liệu cá nhân. Nhóm chỉ thực sự nhận diện rõ rào cản này ở khâu quyết định (CP6), dẫn đến kết quả Not Yet. Tôi nên thúc đẩy nhóm tìm hiểu phương án ẩn danh dữ liệu (PII Masking) hoặc lên kế hoạch dùng dữ liệu giả lập (mock data) ngay từ bước research ban đầu.
 
-**6.7. Hiểu bài:** tự viết 5–8 câu theo chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* cho candidate Xanh SM của nhóm. Dàn ý để bạn tự diễn đạt:
-
-- Problem: Hành khách không biết xử lý ra sao khi chuyến đã ghép nhưng xe chưa tiến về điểm đón; tài xế cũng có thể bị gắn nhãn sai vì kẹt xe/GPS.
-- Quy trình: Rule hỗ trợ khách chọn đổi xe/tiếp tục; sau khi chuyến bị hủy, AI Workflow dự thảo phân loại và trích bằng chứng cho CSKH hậu kiểm.
-- Metric nhóm nêu: khách thoát cuốc trong dưới 5 phút; CSKH xử lý dưới 30 giây/ticket; tỷ lệ false positive dưới 5%.
-- Boundary: AI không tự phạt, tự hoàn tiền hay can thiệp tài khoản; người kiểm soát duyệt; dữ liệu định danh phải được bảo vệ.
-- Mức chọn và quyết định: Workflow kết hợp Rule; Not Yet, pilot 4 tuần trên Staging/Mock Sandbox.
-
-> Hãy viết lại bằng lời của bạn, đồng thời đối chiếu các metric/boundary với `group_report.md`; mục này không được tính là reflection thay bạn.
+**6.7. Hiểu bài:** Nhóm tập trung vào tình huống hành khách bị kẹt khi tài xế đã nhận chuyến nhưng không tiến về điểm đón, đồng thời tránh kết luận tài xế vi phạm chỉ từ GPS đứng im vì nguyên nhân có thể là kẹt xe hoặc lỗi định vị. Sau 3 phút không tiến lại gần và không có cảnh báo tắc đường nghiêm trọng, Rule sẽ cho khách chọn đổi tài xế, giữ giá và voucher; AI không tham gia quyết định giải cứu tức thời. Nếu chuyến bị hủy, AI Workflow tổng hợp chat và dữ liệu hành trình để dự thảo nguyên nhân cùng bằng chứng cho CSKH hậu kiểm. Mục tiêu của nhóm là đưa thời gian thoát cuốc từ 25–35 phút xuống dưới 5 phút, giảm thời gian CSKH xử lý mỗi ticket từ 3–4 phút xuống dưới 30 giây, và giữ tỷ lệ phạt nhầm dưới 5%. AI không được tự phạt tài xế hoặc tự xử lý tiền; CSKH phải duyệt, còn dữ liệu chat và vị trí cần được che thông tin định danh trước khi xử lý. Vì vậy nhóm chọn Workflow kết hợp Rule-based, nhưng quyết định hiện tại là Not Yet: chỉ thử nghiệm 4 tuần trong Staging/Mock Sandbox, rồi mới cân nhắc tích hợp thật.
 
 ## 7. Tài liệu tham khảo
 
