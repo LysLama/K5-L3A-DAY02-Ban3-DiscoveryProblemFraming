@@ -150,3 +150,37 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Candidate có deep-dive sẵn chưa chắc thắng nếu nhóm không đụng được dữ liệu thật trong lab.
 - Card “gắn nhãn hủy chuyến” của mình không bị bỏ: nó trở thành nửa sau của bài ngâm cuốc (AI hỗ trợ CSKH hậu kiểm), còn nửa trước cứu khách chỉ cần Rule.
+
+---
+
+### NguyenThanhTung-2A202603446
+
+**Phần việc phụ trách:**
+
+- CP3: Trình bày 3 candidate cá nhân về ngành dược (QA Pancake, chia lead telesale, kiểm kê thuốc cận date); phản biện bài toán ngâm cuốc của Lâm và unit test của Thành.
+- CP5: **Phụ trách chính thiết kế và vẽ sơ đồ Quy trình Trước/Sau** (sơ đồ Mermaid Mục 4.1 và 4.2 trong `group_report.md`), thiết lập cơ chế Human-in-the-loop (HITL), nhánh Fallback an toàn, và xây dựng bảng Before/After so sánh hiệu quả.
+- CP6: Hỗ trợ Tô Minh Thành phân tích ma trận mức can thiệp, hoàn thiện AI Canvas và trả lời hai câu hỏi thiết kế theo hướng dẫn Google PAIR; đóng góp ý kiến về Boundary an toàn và tiêu chí eval.
+- CP6: Thống nhất với nhóm về việc ra quyết định Not Yet và ngưỡng dừng đo lường được (False Positive > 5%).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Đặt câu hỏi phản biện then chốt cho Lâm tại CP3 về việc phân biệt xe đứng im do ngâm cuốc vs kẹt xe Cổ Linh, giúp nhóm định hình lại việc không được dùng Rule cứng để phạt tài xế.
+- Trực tiếp chuyển hóa ý tưởng của nhóm thành **2 sơ đồ Mermaid chuẩn chỉnh trong Mục 4 `group_report.md`**: Sơ đồ hiện tại (33 phút, 2 bottleneck) và Sơ đồ tương lai (phân định rõ ràng giữa Tầng 1 Rule cứu khách sau 3 phút, Tầng 2 AI Workflow phân tích ngữ cảnh chat/GPS, Chốt chặn con người CSKH duyệt, và nhánh Fallback khi timeout > 3s).
+- Lập bảng so sánh Before/After (Mục 4.3): Chứng minh định lượng việc cắt giảm thời gian giải cứu khách hàng từ 33 phút xuống < 4 phút và tự động hoàn lại 100% voucher.
+- Cùng Thành hoàn thành AI Canvas rút gọn, kiên quyết phản đối mức Autonomous Agent để bảo vệ nhóm khỏi rủi ro over-engineering và tranh chấp pháp lý.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`: Mục 2.1 (Bảng pitch dòng #10 và câu hỏi phản biện cho Lâm), Mục 4.1 (Sơ đồ Mermaid hiện tại + bảng phân rã bước), Mục 4.2 (Sơ đồ Mermaid tương lai phân tầng + HITL + Fallback), Mục 4.3 (Bảng Before/After), Mục 6 (AI Canvas & câu hỏi PAIR).
+- `report/individual/2A202603446_NguyenThanhTung.md`: Báo cáo cá nhân hoàn thiện đầy đủ từ mục 1 đến mục 7.
+- `TEAM.md`: Bảng phân công người chính CP5 (Quy trình trước/sau) và người hỗ trợ CP6.
+
+**Điều mình học được từ phần nhóm:**
+
+- Tư duy "Problem-first" và "Đơn giản nhất đủ dùng": Khách hàng cần được giải cứu bằng Rule tức thì trong 3 phút chứ không cần chờ một mô hình AI suy luận phức tạp; AI chỉ phát huy giá trị cao nhất khi đặt đúng vị trí backend hậu kiểm để đọc hiểu văn bản phi cấu trúc (tin nhắn chat).
+- Trải nghiệm dũng cảm từ bỏ đề tài cá nhân (bài dược) khi bị phản biện về rào cản pháp lý và quyền truy cập API bên thứ ba, để tập trung nguồn lực cùng nhóm giải quyết một bài toán có thể kiểm chứng người dùng thực tế ngay tại khu đô thị Ocean Park.
+
+**Điều mình học được từ phần nhóm:**
+
+- Candidate có deep-dive sẵn chưa chắc thắng nếu nhóm không đụng được dữ liệu thật trong lab.
+- Card “gắn nhãn hủy chuyến” của mình không bị bỏ: nó trở thành nửa sau của bài ngâm cuốc (AI hỗ trợ CSKH hậu kiểm), còn nửa trước cứu khách chỉ cần Rule.
