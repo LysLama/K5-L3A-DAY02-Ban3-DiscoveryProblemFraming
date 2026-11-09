@@ -184,3 +184,30 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Candidate có deep-dive sẵn chưa chắc thắng nếu nhóm không đụng được dữ liệu thật trong lab.
 - Card “gắn nhãn hủy chuyến” của mình không bị bỏ: nó trở thành nửa sau của bài ngâm cuốc (AI hỗ trợ CSKH hậu kiểm), còn nửa trước cứu khách chỉ cần Rule.
+---
+
+### DoanGiaLong-2A202603443
+
+**Phần việc phụ trách:**
+
+- Phụ trách chính CP4 — Kiểm chứng: xây dựng Assumption Map và tổng hợp 5 interview snapshots theo phương pháp The Mom Test.
+- Hỗ trợ Tô Minh Thành trong CP4.
+- Hỗ trợ Lý Thanh Lâm hoàn thiện Problem Statement v0 ở CP5.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Xác định các giả định quan trọng cần kiểm chứng gồm: nhu cầu đổi tài xế mà vẫn giữ giá/voucher, nguyên nhân khách quan khiến xe đứng im và khả năng tiếp cận dữ liệu nội bộ.
+- Tổng hợp 5 interview snapshots và rút ra cả tín hiệu xác nhận lẫn phản bác: khách bị ảnh hưởng bởi thời gian chờ và voucher, trong khi kẹt xe và GPS nhiễu khiến việc kết luận tài xế vi phạm chỉ từ trạng thái đứng im có thể gây oan.
+- Đặt câu hỏi liệu card gắn nhãn chuyến hủy có thể kết hợp với bài toán ngâm cuốc thành luồng trước chuyến/sau chuyến; góp phần định hình hướng giải pháp tách việc hỗ trợ khách tức thì khỏi hậu kiểm nguyên nhân hủy.
+- Đóng góp kết quả kiểm chứng làm cơ sở cho Problem Statement v0 và việc điều chỉnh phạm vi bài toán.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`: mục 2.1 (pitch #2 và #8, phản biện về tiền xử lý OCR và câu hỏi kết hợp bài toán); mục 3.1 (Assumption Map); mục 3.2 (5 interview snapshots, tổng hợp kiểm chứng và điều chỉnh problem); mục 5 (Problem Statement v0).
+- `TEAM.md`: bảng phân công CP4 — Kiểm chứng và CP5 — Problem Statement v0.
+- Hai file được đối chiếu không nêu file asset riêng hoặc commit cụ thể cho phần việc này.
+
+**Điều mình học được từ phần nhóm:**
+
+  - Qua kiểm chứng, mình nhận ra cần hỏi về sự việc đã xảy ra và lắng nghe cả bằng chứng phản bác, thay vì chỉ tìm câu trả lời xác nhận ý tưởng.
+  - Phản hồi về kẹt xe và sai số GPS khiến nhóm phải tách việc giải cứu khách khỏi việc xác định trách nhiệm tài xế; nhờ vậy giải pháp tránh biến một tín hiệu chưa đủ chắc chắn thành kết luận hay hình phạt tự động.

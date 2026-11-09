@@ -139,16 +139,16 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày 3 pitch về so sánh nhãn sản phẩm, kiểm tra dị ứng và nghĩ món ăn; đồng thời hỏi Phạm Trung Kiên liệu có thể ghép bài gắn nhãn chuyến hủy với bài ngâm cuốc. | Ba pitch bổ sung góc nhìn tiêu dùng vào cluster D. Câu hỏi về hai pitch gọi xe góp phần định hình candidate kết hợp: cứu khách trước chuyến và phân loại khiếu nại sau chuyến. |
+| Phản biện bài của bạn khác | Hỏi liệu xử lý ảnh OCR có cần AI không; đề xuất ghép bài gắn nhãn chuyến hủy với bài ngâm cuốc. | Gợi mở kiểm tra tính cần thiết của AI và kết hợp hai vấn đề gọi xe thành luồng trước chuyến/hậu kiểm. |
+| Nhận phản biện | Nhận câu hỏi về tính khả thi khi nhờ AI đọc nhãn lúc mua sắm và mức độ tin cậy khi kiểm tra dị ứng. | Nhận ra cần đặt câu hỏi về độ tin cậy và bằng chứng, không chỉ giả định giải pháp hữu ích. |
+| Gom cluster / cây OST | Đề xuất kết hợp card gắn nhãn chuyến hủy với bài ngâm cuốc; không phụ trách dựng OST. | Card gắn nhãn chuyến hủy được cân nhắc ở khâu hậu kiểm; OST tập trung vào outcome giảm thời gian khách mắc kẹt. |
+| Chọn candidate problem | Tham gia thảo luận, đề xuất kết hợp hai vấn đề gọi xe. | Nhóm chọn bài tài xế ngâm cuốc; card gắn nhãn hủy chuyến trở thành phần hậu kiểm. |
+| Kiểm chứng / research | Phụ trách CP4: Assumption Map và tổng hợp interview snapshots theo The Mom Test; Tô Minh Thành hỗ trợ. | Phỏng vấn ghi nhận pain của khách và phản chứng về kẹt xe/GPS; nhóm tách cứu khách khỏi việc xác định trách nhiệm tài xế. |
+| Quy trình nhóm | Không phụ trách vẽ quy trình; CP5 do Nguyễn Thanh Tùng phụ trách, Phạm Trung Kiên hỗ trợ. | Báo cáo nhóm mô tả Rule cứu khách, AI Workflow hậu kiểm, HITL và fallback. |
+| Problem Statement | Hỗ trợ Lý Thanh Lâm xây dựng Problem Statement v0 từ kết quả kiểm chứng. | V0 xác định actor, quy trình, bottleneck, impact, metric và boundary. |
+| Mức can thiệp AI | Không phụ trách CP6; đóng góp kết quả kiểm chứng cho thảo luận. | Nhóm chọn Workflow kết hợp Rule-based; AI chỉ hỗ trợ phân loại, con người duyệt kết quả. |
+| Quyết định | Đóng góp bằng chứng kiểm chứng; không phụ trách chốt quyết định. | Nhóm chọn Not Yet và đề xuất pilot 4 tuần trên Staging/Mock Sandbox. |
 
 ---
 
@@ -156,12 +156,12 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Sau khi tự scan vấn đề, tham khảo AI để gợi ý thêm và cân nhắc các ý có thể đo lường. | Gợi thêm hướng để so sánh với các vấn đề đã tự quan sát. | không tự chứng minh được vấn đề xảy ra thật hoặc có baseline đáng tin cậy. | Giữ lại các ý phù hợp với quan sát của mình (#2, #4, #6) và bỏ các ý khó đo bằng dữ liệu thực tế. |
+| CP2 Problem Card | Dùng AI phản biện card #14 về kiểm tra dị ứng cho bố mẹ | Chỉ ra lý do pitch bị lệch trọng tâm, thiếu bằng chứng cụ thể và metric tiết kiệm thời gian chưa thể hiện giá trị chính. | không thể xác nhận tiền sử dị ứng hay thay thế việc hỏi người thân; nhận xét cần đối chiếu với bối cảnh thật. | Bỏ ý “đảm bảo độ ngon”, tập trung vào an toàn; bổ sung việc cần xác minh nhóm chất dị ứng/sự cố đã xảy ra và đổi metric sang không để sản phẩm không phù hợp lọt vào giỏ. |
+| CP4 Research | Dùng AI tìm nguồn tham khảo, hỗ trợ nhóm tổng hợp research. | Gợi ý case để đối chiếu. | Thông tin AI cần được kiểm chứng. | Đối chiếu nguồn trước khi đưa vào bài. |
+| CP5 Quy trình | Dùng AI góp ý cách trình bày quy trình. | Giúp làm rõ Rule, AI Workflow và người duyệt. | Gợi ý chung, có thể bỏ sót ngoại lệ thực tế. | Đối chiếu với kết quả kiểm chứng và nội dung nhóm. |
+| CP5–6 Problem Statement | Hỗ trợ Lý Thanh Lâm ở Problem Statement v0; báo cáo nhóm có ghi nhận phản biện AI rằng v0 đang gộp vấn đề hành vi tài xế và trải nghiệm khách hàng. | Phản biện giúp nhận ra phạm vi quá rộng và cần xác định điểm can thiệp AI cụ thể. | Nhận xét của AI không thay thế bằng chứng người dùng; cần dùng kết quả phỏng vấn để xác định cách tách vấn đề. | Dùng tín hiệu xác nhận và phản bác từ CP4 để hỗ trợ hướng tách cứu khách tức thời khỏi hậu kiểm khiếu nại; không gán việc soạn v1 cho cá nhân mình. |
+| CP6 Mức can thiệp / quyết định | Dùng AI tham khảo các mức can thiệp và rà soát ranh giới an toàn. | Gợi ý cách phân vai Rule, AI Workflow và người duyệt. | Gợi ý còn chung, chưa tính đủ rủi ro phạt oan. | Đối chiếu với phỏng vấn; giữ quyết định cuối ở con người và thống nhất hướng Workflow/Not Yet của nhóm. |
 
 ---
 
@@ -169,22 +169,44 @@ Quy trình nháp hiện tại:
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
+> **Bản nháp tham khảo:** Hãy chỉnh lại các nhận xét và cảm xúc cho đúng trải nghiệm thực tế của bạn; không nên nộp nguyên văn.
+
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+
+Khi nghe các bạn trình bày, tôi thấy cùng một khó khăn có thể xuất hiện ở nhiều quy trình khác nhau: đọc và đối chiếu thông tin, xử lý dữ liệu thủ công, hoặc chờ đợi do hệ thống thiếu thông tin. Tôi cũng nhận ra một vấn đề nghe có vẻ hữu ích chưa chắc cần AI.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
+Có lúc nhóm đề xuất từ ý tưởng phát hiện xe đứng im sang tự động xử lý tài xế, trước khi làm rõ nguyên nhân xe không di chuyển. Sau đó nhóm tìm hiểu thêm thì cho thấy xe có thể đứng im vì kẹt xe hoặc GPS sai lệch. Nhóm dùng phản chứng này để tách hai nhu cầu: Rule giúp khách thoát khỏi cuốc bị kẹt; AI chỉ hỗ trợ CSKH hậu kiểm và con người quyết định trách nhiệm.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+
+Có. Khi trình bày vấn đề kiểm tra dị ứng cho bố mẹ, tôi ban đầu gộp việc chọn sản phẩm hợp món ăn với bảo đảm an toàn. Phản biện của Lâm giúp tôi thấy “độ ngon” không liên quan trực tiếp đến nguy cơ dị ứng. Còn phản biện về độ tin cậy nhắc tôi rằng AI không thể thay thế việc xác minh thông tin dị ứng. 
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
+Điểm bất ngờ nhất với tôi là phản hồi của tài xế: xe đứng im không đủ để kết luận có vi phạm. Kẹt xe và GPS trôi ở khu vực nhiều tòa nhà đều có thể tạo ra tín hiệu giống hành vi ngâm cuốc. Trong khi đó, phỏng vấn khách cho thấy thời gian chờ và nguy cơ mất voucher là vấn đề rõ rệt; phỏng vấn nhân sự vận hành cũng cho thấy việc đọc chat và đối chiếu GPS tốn công.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
+Khó nhất là giới hạn phạm vi và tách rõ ai gặp vấn đề ở bước nào. Bản đầu dễ gộp trải nghiệm khách hàng với việc xác định lỗi của tài xế thành một bài toán duy nhất. Sau phản biện, nhóm phải mô tả riêng việc khách cần thoát cuốc nhanh và việc CSKH cần phân loại khiếu nại. Việc chọn metric cũng cần bám vào phần giải pháp có thể tác động như thời gian khách thoát cuốc, bảo lưu voucher...
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu làm lại, tôi sẽ đề xuất sớm hơn cách kiểm chứng chất lượng GPS và tình trạng giao thông, đồng thời hỏi kỹ hơn về nguồn và tính đại diện của dữ liệu phỏng vấn. Với đề xuất AI, tôi sẽ yêu cầu nhóm nêu từ đầu dữ liệu nào thực sự được phép sử dụng và cách bảo vệ thông tin cá nhân. Điều đó giúp Problem Statement và phạm vi giải pháp sát với điều kiện thực tế hơn.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Khách hàng bị mắc kẹt khi tài xế nhận cuốc nhưng xe đứng im hoặc đi sai hướng, phải chờ và tự thu thập bằng chứng để khiếu nại. Quy trình đề xuất dùng Rule để phát hiện tình trạng bất thường và cho khách chọn đổi xe, đồng thời giữ voucher. Mục tiêu là giúp khách thoát cuốc trong dưới 5 phút, bảo lưu voucher và giảm thời gian CSKH hậu kiểm. AI chỉ phân tích chat, GPS và tình trạng giao thông để tạo bản tóm tắt nguyên nhân cho CSKH. AI không được tự phạt tài xế hay tự xử lý tiền; con người duyệt quyết định. Vì vậy nhóm chọn Workflow kết hợp Rule-based, không chọn Agent tự trị. Nhóm quyết định Not Yet và đề xuất pilot 4 tuần trên Staging/Mock Sandbox trước khi xem xét tích hợp.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+Grab Engineering. (n.d.). Graph networks - Striking fraud syndicates in the dark. https://engineering.grab.com/graph-networks
+
+Li, M. (2022, April 28). Graph networks - Striking fraud syndicates in the dark. Grab Tech Blog. https://engineering.grab.com/graph-networks
+
+Zelvenskiy, S., Harisinghani, G., Yu, T., Ng, E., & Wei, R. (2022, February 1). Project RADAR: Intelligent early fraud detection system with humans in the loop. Uber Engineering. https://www.uber.com/blog/project-radar-intelligent-early-fraud-detection/
+
+Zendesk. (2026). Zendesk AI for customer service. Retrieved November 9, 2026, from https://www.zendesk.com/service/ai/
